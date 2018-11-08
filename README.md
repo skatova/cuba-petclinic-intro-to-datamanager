@@ -12,7 +12,7 @@ The CUBA Petclinic application deals with the domain of a Pet clinic and the ass
 ## Additional features of this example
 
 
-![Adjustments CUBA Petclinic Overview screencast](https://github.com/cuba-platform/cuba-petclinic-intro-to-datamanager/blob/master/img/adjustments-cuba-petclinic-overview.gif)
+![Adjustments CUBA Petclinic Overview screencast](https://github.com/cuba-guides/cuba-petclinic-intro-to-datamanager/blob/master/img/adjustments-cuba-petclinic-overview.gif)
 
 
 ## Domain model
