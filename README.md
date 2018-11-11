@@ -6,8 +6,6 @@ The CUBA Petclinic application deals with the domain of a Pet clinic and the ass
 
 ## Application overview - Features of this example
 
-
-![Adjustments CUBA Petclinic Overview screencast](https://github.com/cuba-guides/cuba-petclinic-intro-to-datamanager/blob/master/img/adjustments-cuba-petclinic-overview.gif)
 <a href="https://raw.githubusercontent.com/cuba-guides/cuba-petclinic-intro-to-datamanager/master/img/adjustments-cuba-petclinic-overview.gif"><img src="https://raw.githubusercontent.com/cuba-guides/cuba-petclinic-intro-to-datamanager/master/img/login-screen.png"/></a>
 
 
