@@ -16,6 +16,7 @@ import com.haulmont.cuba.gui.screen.UiController;
 import com.haulmont.cuba.gui.screen.UiDescriptor;
 
 import javax.inject.Inject;
+import java.util.Optional;
 
 @UiController
 @UiDescriptor("create-visit-for-pet.xml")
@@ -40,9 +41,16 @@ public class CreateVisitForPet extends Screen {
     public void createVisit(Action.ActionPerformedEvent event) {
         Visit visit = createVisitForToday();
 
-        close(new StandardCloseAction(EditorScreen.WINDOW_COMMIT_AND_CLOSE))
-                .then(() -> showVisitCreatedNotification(visit))
-                .then(() -> openVisitDetails(visit));
+        if (visit != null) {
+            close(new StandardCloseAction(EditorScreen.WINDOW_COMMIT_AND_CLOSE))
+                    .then(() -> showVisitCreatedNotification(visit))
+                    .then(() -> openVisitDetails(visit));
+        }
+        else {
+            notifications.create(Notifications.NotificationType.WARNING)
+                    .withCaption("No Pet found for Identification Number: " + identificationNumber.getValue())
+                    .show();
+        }
     }
 
     private Visit createVisitForToday() {
